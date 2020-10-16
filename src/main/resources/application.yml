@@ -1,0 +1,25 @@
+  spring:
+    datasource:
+      url: jdbc:postgresql://127.0.0.1:5432/shiro
+      username: postgres
+      password: postgres
+      #schema: database/import.sql
+      #sql-script-encoding: utf-8
+      #driver-class-name: com.mysql.cj.jdbc.Driver
+      driverclassname: org.postgresql.Driver
+
+    jpa:
+      database: postgresql
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate:
+          temp:
+            use_jdbc_metadata_defaults: false
+
+    thymeleaf:
+       cache: false
+       mode: HTML
+  server:
+    port: 8088
