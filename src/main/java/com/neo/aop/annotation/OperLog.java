@@ -11,7 +11,7 @@ import java.lang.annotation.*;
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-//
+// 注释
 public @interface OperLog {
     String value() default "";
 }
